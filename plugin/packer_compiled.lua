@@ -104,6 +104,12 @@ _G.packer_plugins = {
     path = "/home/krishankanhaya/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["flash.nvim"] = {
+    config = { "\27LJ\2\nP\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\rautojump\2\16jump_labels\1\tjump\nflash\frequire�\1\1\0\6\0\15\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0005\2\v\0'\3\f\0003\4\r\0005\5\14\0B\0\5\1K\0\1\0\1\0\1\tdesc\17Flash Search\0\6f\1\4\0\0\6n\6x\6o\bset\vkeymap\bvim\nmodes\1\0\1\nmodes\0\tchar\1\0\1\tchar\0\1\0\2\rautojump\2\16jump_labels\1\nsetup\nflash\frequire\0" },
+    loaded = true,
+    path = "/home/krishankanhaya/.local/share/nvim/site/pack/packer/start/flash.nvim",
+    url = "https://github.com/folke/flash.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/krishankanhaya/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -120,6 +126,7 @@ _G.packer_plugins = {
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
   ["lualine.nvim"] = {
+    config = { "\27LJ\2\n�\4\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\3=\3\t\0025\3\v\0005\4\n\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\3=\3\23\2B\0\2\1K\0\1\0\rsections\14lualine_z\1\2\0\0\rlocation\14lualine_y\1\2\0\0\rprogress\14lualine_x\1\4\0\0\rencoding\15fileformat\rfiletype\14lualine_c\1\2\0\0\rfilename\14lualine_b\1\4\0\0\vbranch\tdiff\16diagnostics\14lualine_a\1\0\6\14lualine_a\0\14lualine_b\0\14lualine_c\0\14lualine_x\0\14lualine_y\0\14lualine_z\0\1\2\0\0\tmode\foptions\1\0\2\rsections\0\foptions\0\23section_separators\1\0\2\tleft\b\nright\b\25component_separators\1\0\2\tleft\b\nright\b\1\0\4\25component_separators\0\23section_separators\0\ntheme\fgruvbox\18icons_enabled\2\nsetup\flualine\frequire\0" },
     loaded = true,
     path = "/home/krishankanhaya/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
@@ -148,6 +155,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/krishankanhaya/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/krishankanhaya/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -192,6 +205,14 @@ time([[Defining packer_plugins]], false)
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n�\4\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\3=\3\t\0025\3\v\0005\4\n\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\3=\3\23\2B\0\2\1K\0\1\0\rsections\14lualine_z\1\2\0\0\rlocation\14lualine_y\1\2\0\0\rprogress\14lualine_x\1\4\0\0\rencoding\15fileformat\rfiletype\14lualine_c\1\2\0\0\rfilename\14lualine_b\1\4\0\0\vbranch\tdiff\16diagnostics\14lualine_a\1\0\6\14lualine_a\0\14lualine_b\0\14lualine_c\0\14lualine_x\0\14lualine_y\0\14lualine_z\0\1\2\0\0\tmode\foptions\1\0\2\rsections\0\foptions\0\23section_separators\1\0\2\tleft\b\nright\b\25component_separators\1\0\2\tleft\b\nright\b\1\0\4\25component_separators\0\23section_separators\0\ntheme\fgruvbox\18icons_enabled\2\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
+-- Config for: flash.nvim
+time([[Config for flash.nvim]], true)
+try_loadstring("\27LJ\2\nP\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\rautojump\2\16jump_labels\1\tjump\nflash\frequire�\1\1\0\6\0\15\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0005\2\v\0'\3\f\0003\4\r\0005\5\14\0B\0\5\1K\0\1\0\1\0\1\tdesc\17Flash Search\0\6f\1\4\0\0\6n\6x\6o\bset\vkeymap\bvim\nmodes\1\0\1\nmodes\0\tchar\1\0\1\tchar\0\1\0\2\rautojump\2\16jump_labels\1\nsetup\nflash\frequire\0", "config", "flash.nvim")
+time([[Config for flash.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
